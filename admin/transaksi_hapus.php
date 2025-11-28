@@ -12,4 +12,6 @@ mysqli_query($koneksi,"delete from transaksi where transaksi_id='$id'");
 mysqli_query($koneksi,"delete from pakaian where pakaian_id='$id'");
 
 header("location:transaksi.php");
+
+echo "<script>alert('Data Tersimpan'); window.location.href='transaksi.php'</script>";
 ?>
